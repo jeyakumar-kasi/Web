@@ -14,7 +14,7 @@ $no_of_months = 10; # For 10 Months.
 ?>
 <style type="text/css">
     body {
-        background: rgba(187, 215, 236, 0.3);
+        background: rgba(187, 215, 236, 0.5);
 /*        background-image: radial-gradient(grey 1px, transparent 0);
         background-size: 10px 10px;
         background-position: -19px -19px;*/
