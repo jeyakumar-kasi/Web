@@ -48,7 +48,7 @@ $no_of_months = 10; # For 10 Months.
     
     .sep {
         margin: 30px 0;
-        border: 1px dashed rgba(187, 215, 236, 0.7);
+        border: 2px dotted rgba(187, 215, 236, 0.9);
     }
     
     .clr {
