@@ -1,0 +1,300 @@
+2023-01-14 12:01:58 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-01-14 12:01:58 0 [Note] InnoDB: Uses event mutexes
+2023-01-14 12:01:58 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-01-14 12:01:58 0 [Note] InnoDB: Number of pools: 1
+2023-01-14 12:01:58 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-01-14 12:01:58 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-01-14 12:01:58 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-01-14 12:01:58 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=300288
+2023-01-14 12:01:58 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-01-14 12:01:58 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-01-14 12:01:58 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-01-14 12:01:58 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-01-14 12:01:58 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2023-01-14 12:01:58 0 [Note] InnoDB: Waiting for purge to start
+2023-01-14 12:01:58 0 [Note] InnoDB: 10.4.27 started; log sequence number 300297; transaction id 170
+2023-01-14 12:01:58 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2023-01-14 12:01:58 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-01-14 12:01:58 0 [Note] Server socket created on IP: '::'.
+2023-01-14 12:07:14 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-01-14 12:07:14 0 [Note] InnoDB: Uses event mutexes
+2023-01-14 12:07:14 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-01-14 12:07:14 0 [Note] InnoDB: Number of pools: 1
+2023-01-14 12:07:14 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-01-14 12:07:14 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-01-14 12:07:14 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-01-14 12:07:14 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-01-14 12:07:14 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-01-14 12:07:14 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-01-14 12:07:14 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2023-01-14 12:07:14 0 [Note] InnoDB: Waiting for purge to start
+2023-01-14 12:07:14 0 [Note] InnoDB: 10.4.27 started; log sequence number 300333; transaction id 170
+2023-01-14 12:07:14 0 [Note] InnoDB: Loading buffer pool(s) from C:\xampp\mysql\data\ib_buffer_pool
+2023-01-14 12:07:14 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-01-14 12:07:14 0 [Note] InnoDB: Buffer pool(s) load completed at 230114 12:07:14
+2023-01-14 12:07:14 0 [Note] Server socket created on IP: '::'.
+2023-01-14 12:19:57 0 [Note] InnoDB: The first innodb_system data file 'ibdata1' did not exist. A new tablespace will be created!
+2023-01-14 12:19:57 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-01-14 12:19:57 0 [Note] InnoDB: Uses event mutexes
+2023-01-14 12:19:57 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-01-14 12:19:57 0 [Note] InnoDB: Number of pools: 1
+2023-01-14 12:19:57 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-01-14 12:19:57 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-01-14 12:19:57 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-01-14 12:19:57 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2023-01-14 12:19:57 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2023-01-14 12:19:57 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2023-01-14 12:19:57 0 [ERROR] InnoDB: File C:\xampp\mysql\data\ibdata1: 'create' returned OS error 203. Cannot continue operation
+230114 12:19:57 [ERROR] mysqld got exception 0x80000003 ;
+This could be because you hit a bug. It is also possible that this binary
+or one of the libraries it was linked against is corrupt, improperly built,
+or misconfigured. This error can also be caused by malfunctioning hardware.
+
+To report this bug, see https://mariadb.com/kb/en/reporting-bugs
+
+We will try our best to scrape up some info that will hopefully help
+diagnose the problem, but since we have already crashed, 
+something is definitely wrong and this may fail.
+
+Server version: 10.4.27-MariaDB
+key_buffer_size=16777216
+read_buffer_size=262144
+max_used_connections=0
+max_threads=65537
+thread_count=0
+It is possible that mysqld could use up to 
+key_buffer_size + (read_buffer_size + sort_buffer_size)*max_threads = 20302 K  bytes of memory
+Hope that's ok; if not, decrease some variables in the equation.
+
+Thread pointer: 0x0
+Attempting backtrace. You can use the following information to find out
+where mysqld died. If you see no messages after this, something went
+terribly wrong...
+mysqld.exe!my_parameter_handler()
+ucrtbase.dll!raise()
+ucrtbase.dll!abort()
+mysqld.exe!?_Assign_grow@?$_Hash_vec@V?$allocator@V?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@std@@@std@@@std@@QEAAX_KV?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@2@@Z()
+mysqld.exe!?_Assign_grow@?$_Hash_vec@V?$allocator@V?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@std@@@std@@@std@@QEAAX_KV?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@2@@Z()
+mysqld.exe!?_Assign_grow@?$_Hash_vec@V?$allocator@V?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@std@@@std@@@std@@QEAAX_KV?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@2@@Z()
+mysqld.exe!pthread_dummy()
+mysqld.exe!pthread_dummy()
+mysqld.exe!pthread_dummy()
+mysqld.exe!?_Xlen_string@std@@YAXXZ()
+mysqld.exe!?ha_initialize_handlerton@@YAHPEAUst_plugin_int@@@Z()
+mysqld.exe!?plugin_init@@YAHPEAHPEAPEADH@Z()
+mysqld.exe!?plugin_init@@YAHPEAHPEAPEADH@Z()
+mysqld.exe!?init_net_server_extension@@YAXPEAVTHD@@@Z()
+mysqld.exe!?win_main@@YAHHPEAPEAD@Z()
+mysqld.exe!?mysql_service@@YAXPEAX@Z()
+mysqld.exe!?mysqld_main@@YAHHPEAPEAD@Z()
+mysqld.exe!strxnmov()
+KERNEL32.DLL!BaseThreadInitThunk()
+ntdll.dll!RtlUserThreadStart()
+The manual page at https://mariadb.com/kb/en/how-to-produce-a-full-stack-trace-for-mysqld/ contains
+information that should help you find out what is causing the crash.
+Writing a core file at C:\works\htdocs\_\mysql\data\
+Minidump written to C:\works\htdocs\_\mysql\data\mysqld.dmp
+2023-01-14 12:20:09 0 [Note] InnoDB: The first innodb_system data file 'ibdata1' did not exist. A new tablespace will be created!
+2023-01-14 12:20:09 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-01-14 12:20:09 0 [Note] InnoDB: Uses event mutexes
+2023-01-14 12:20:09 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-01-14 12:20:09 0 [Note] InnoDB: Number of pools: 1
+2023-01-14 12:20:09 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-01-14 12:20:09 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-01-14 12:20:09 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-01-14 12:20:09 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2023-01-14 12:20:09 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2023-01-14 12:20:09 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2023-01-14 12:20:09 0 [ERROR] InnoDB: File C:\xampp\mysql\data\ibdata1: 'create' returned OS error 203. Cannot continue operation
+230114 12:20:09 [ERROR] mysqld got exception 0x80000003 ;
+This could be because you hit a bug. It is also possible that this binary
+or one of the libraries it was linked against is corrupt, improperly built,
+or misconfigured. This error can also be caused by malfunctioning hardware.
+
+To report this bug, see https://mariadb.com/kb/en/reporting-bugs
+
+We will try our best to scrape up some info that will hopefully help
+diagnose the problem, but since we have already crashed, 
+something is definitely wrong and this may fail.
+
+Server version: 10.4.27-MariaDB
+key_buffer_size=16777216
+read_buffer_size=262144
+max_used_connections=0
+max_threads=65537
+thread_count=0
+It is possible that mysqld could use up to 
+key_buffer_size + (read_buffer_size + sort_buffer_size)*max_threads = 20302 K  bytes of memory
+Hope that's ok; if not, decrease some variables in the equation.
+
+Thread pointer: 0x0
+Attempting backtrace. You can use the following information to find out
+where mysqld died. If you see no messages after this, something went
+terribly wrong...
+mysqld.exe!my_parameter_handler()
+ucrtbase.dll!raise()
+ucrtbase.dll!abort()
+mysqld.exe!?_Assign_grow@?$_Hash_vec@V?$allocator@V?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@std@@@std@@@std@@QEAAX_KV?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@2@@Z()
+mysqld.exe!?_Assign_grow@?$_Hash_vec@V?$allocator@V?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@std@@@std@@@std@@QEAAX_KV?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@2@@Z()
+mysqld.exe!?_Assign_grow@?$_Hash_vec@V?$allocator@V?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@std@@@std@@@std@@QEAAX_KV?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@2@@Z()
+mysqld.exe!pthread_dummy()
+mysqld.exe!pthread_dummy()
+mysqld.exe!pthread_dummy()
+mysqld.exe!?_Xlen_string@std@@YAXXZ()
+mysqld.exe!?ha_initialize_handlerton@@YAHPEAUst_plugin_int@@@Z()
+mysqld.exe!?plugin_init@@YAHPEAHPEAPEADH@Z()
+mysqld.exe!?plugin_init@@YAHPEAHPEAPEADH@Z()
+mysqld.exe!?init_net_server_extension@@YAXPEAVTHD@@@Z()
+mysqld.exe!?win_main@@YAHHPEAPEAD@Z()
+mysqld.exe!?mysql_service@@YAXPEAX@Z()
+mysqld.exe!?mysqld_main@@YAHHPEAPEAD@Z()
+mysqld.exe!strxnmov()
+KERNEL32.DLL!BaseThreadInitThunk()
+ntdll.dll!RtlUserThreadStart()
+The manual page at https://mariadb.com/kb/en/how-to-produce-a-full-stack-trace-for-mysqld/ contains
+information that should help you find out what is causing the crash.
+Writing a core file at C:\works\htdocs\_\mysql\data\
+Minidump written to C:\works\htdocs\_\mysql\data\mysqld.dmp
+2023-01-14 12:20:13 0 [Note] InnoDB: The first innodb_system data file 'ibdata1' did not exist. A new tablespace will be created!
+2023-01-14 12:20:13 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-01-14 12:20:13 0 [Note] InnoDB: Uses event mutexes
+2023-01-14 12:20:13 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-01-14 12:20:13 0 [Note] InnoDB: Number of pools: 1
+2023-01-14 12:20:13 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-01-14 12:20:13 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-01-14 12:20:13 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-01-14 12:20:13 0 [ERROR] InnoDB: Operating system error number 3 in a file operation.
+2023-01-14 12:20:13 0 [ERROR] InnoDB: The error means the system cannot find the path specified.
+2023-01-14 12:20:13 0 [ERROR] InnoDB: If you are installing InnoDB, remember that you must create directories yourself, InnoDB does not create them.
+2023-01-14 12:20:13 0 [ERROR] InnoDB: File C:\xampp\mysql\data\ibdata1: 'create' returned OS error 203. Cannot continue operation
+230114 12:20:13 [ERROR] mysqld got exception 0x80000003 ;
+This could be because you hit a bug. It is also possible that this binary
+or one of the libraries it was linked against is corrupt, improperly built,
+or misconfigured. This error can also be caused by malfunctioning hardware.
+
+To report this bug, see https://mariadb.com/kb/en/reporting-bugs
+
+We will try our best to scrape up some info that will hopefully help
+diagnose the problem, but since we have already crashed, 
+something is definitely wrong and this may fail.
+
+Server version: 10.4.27-MariaDB
+key_buffer_size=16777216
+read_buffer_size=262144
+max_used_connections=0
+max_threads=65537
+thread_count=0
+It is possible that mysqld could use up to 
+key_buffer_size + (read_buffer_size + sort_buffer_size)*max_threads = 20302 K  bytes of memory
+Hope that's ok; if not, decrease some variables in the equation.
+
+Thread pointer: 0x0
+Attempting backtrace. You can use the following information to find out
+where mysqld died. If you see no messages after this, something went
+terribly wrong...
+mysqld.exe!my_parameter_handler()
+ucrtbase.dll!raise()
+ucrtbase.dll!abort()
+mysqld.exe!?_Assign_grow@?$_Hash_vec@V?$allocator@V?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@std@@@std@@@std@@QEAAX_KV?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@2@@Z()
+mysqld.exe!?_Assign_grow@?$_Hash_vec@V?$allocator@V?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@std@@@std@@@std@@QEAAX_KV?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@2@@Z()
+mysqld.exe!?_Assign_grow@?$_Hash_vec@V?$allocator@V?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@std@@@std@@@std@@QEAAX_KV?$_List_unchecked_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@QEAU_iobuf@@PEAX@std@@@std@@@std@@@2@@Z()
+mysqld.exe!pthread_dummy()
+mysqld.exe!pthread_dummy()
+mysqld.exe!pthread_dummy()
+mysqld.exe!?_Xlen_string@std@@YAXXZ()
+mysqld.exe!?ha_initialize_handlerton@@YAHPEAUst_plugin_int@@@Z()
+mysqld.exe!?plugin_init@@YAHPEAHPEAPEADH@Z()
+mysqld.exe!?plugin_init@@YAHPEAHPEAPEADH@Z()
+mysqld.exe!?init_net_server_extension@@YAXPEAVTHD@@@Z()
+mysqld.exe!?win_main@@YAHHPEAPEAD@Z()
+mysqld.exe!?mysql_service@@YAXPEAX@Z()
+mysqld.exe!?mysqld_main@@YAHHPEAPEAD@Z()
+mysqld.exe!strxnmov()
+KERNEL32.DLL!BaseThreadInitThunk()
+ntdll.dll!RtlUserThreadStart()
+The manual page at https://mariadb.com/kb/en/how-to-produce-a-full-stack-trace-for-mysqld/ contains
+information that should help you find out what is causing the crash.
+Writing a core file at C:\works\htdocs\_\mysql\data\
+Minidump written to C:\works\htdocs\_\mysql\data\mysqld.dmp
+2023-01-14 12:20:41 0 [Note] InnoDB: The first innodb_system data file 'ibdata1' did not exist. A new tablespace will be created!
+2023-01-14 12:20:41 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-01-14 12:20:41 0 [Note] InnoDB: Uses event mutexes
+2023-01-14 12:20:41 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-01-14 12:20:41 0 [Note] InnoDB: Number of pools: 1
+2023-01-14 12:20:41 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-01-14 12:20:41 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-01-14 12:20:41 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-01-14 12:20:41 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibdata1' size to 10 MB. Physically writing the file full; Please wait ...
+2023-01-14 12:20:41 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibdata1' size is now 10 MB.
+2023-01-14 12:20:41 0 [Note] InnoDB: Setting log file C:\xampp\mysql\data\ib_logfile101 size to 5242880 bytes
+2023-01-14 12:20:41 0 [Note] InnoDB: Setting log file C:\xampp\mysql\data\ib_logfile1 size to 5242880 bytes
+2023-01-14 12:20:41 0 [Note] InnoDB: Renaming log file C:\xampp\mysql\data\ib_logfile101 to C:\xampp\mysql\data\ib_logfile0
+2023-01-14 12:20:41 0 [Note] InnoDB: New log files created, LSN=11451
+2023-01-14 12:20:41 0 [Note] InnoDB: Doublewrite buffer not found: creating new
+2023-01-14 12:20:41 0 [Note] InnoDB: Doublewrite buffer created
+2023-01-14 12:20:41 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-01-14 12:20:41 0 [Note] InnoDB: Creating foreign key constraint system tables.
+2023-01-14 12:20:41 0 [Note] InnoDB: Creating tablespace and datafile system tables.
+2023-01-14 12:20:41 0 [Note] InnoDB: Creating sys_virtual system tables.
+2023-01-14 12:20:41 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-01-14 12:20:41 0 [Note] InnoDB: Setting file 'C:\xampp\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-01-14 12:20:41 0 [Note] InnoDB: File 'C:\xampp\mysql\data\ibtmp1' size is now 12 MB.
+2023-01-14 12:20:41 0 [Note] InnoDB: Waiting for purge to start
+2023-01-14 12:20:41 0 [Note] InnoDB: 10.4.27 started; log sequence number 0; transaction id 7
+2023-01-14 12:20:41 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-01-14 12:20:41 0 [Note] Server socket created on IP: '::'.
+2023-01-14 12:22:18 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-01-14 12:22:18 0 [Note] InnoDB: Uses event mutexes
+2023-01-14 12:22:18 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-01-14 12:22:18 0 [Note] InnoDB: Number of pools: 1
+2023-01-14 12:22:18 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-01-14 12:22:18 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-01-14 12:22:18 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-01-14 12:22:19 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-01-14 12:22:19 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-01-14 12:22:19 0 [Note] InnoDB: Setting file 'C:\works\htdocs\_\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-01-14 12:22:19 0 [Note] InnoDB: File 'C:\works\htdocs\_\mysql\data\ibtmp1' size is now 12 MB.
+2023-01-14 12:22:19 0 [Note] InnoDB: Waiting for purge to start
+2023-01-14 12:22:19 0 [Note] InnoDB: 10.4.27 started; log sequence number 300333; transaction id 170
+2023-01-14 12:22:19 0 [Note] InnoDB: Loading buffer pool(s) from C:\works\htdocs\_\mysql\data\ib_buffer_pool
+2023-01-14 12:22:19 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-01-14 12:22:19 0 [Note] InnoDB: Buffer pool(s) load completed at 230114 12:22:19
+2023-01-14 12:22:19 0 [Note] Server socket created on IP: '::'.
+2023-01-15 18:44:20 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-01-15 18:44:20 0 [Note] InnoDB: Uses event mutexes
+2023-01-15 18:44:20 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-01-15 18:44:20 0 [Note] InnoDB: Number of pools: 1
+2023-01-15 18:44:20 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-01-15 18:44:20 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-01-15 18:44:20 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-01-15 18:44:20 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=300333
+2023-01-15 18:44:20 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-01-15 18:44:20 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-01-15 18:44:20 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-01-15 18:44:20 0 [Note] InnoDB: Setting file 'C:\works\htdocs\_\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-01-15 18:44:20 0 [Note] InnoDB: File 'C:\works\htdocs\_\mysql\data\ibtmp1' size is now 12 MB.
+2023-01-15 18:44:20 0 [Note] InnoDB: Waiting for purge to start
+2023-01-15 18:44:20 0 [Note] InnoDB: 10.4.27 started; log sequence number 300342; transaction id 170
+2023-01-15 18:44:20 0 [Note] InnoDB: Loading buffer pool(s) from C:\works\htdocs\_\mysql\data\ib_buffer_pool
+2023-01-15 18:44:20 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-01-15 18:44:20 0 [Note] InnoDB: Buffer pool(s) load completed at 230115 18:44:20
+2023-01-15 18:44:20 0 [Note] Server socket created on IP: '::'.
+2023-01-18  9:07:53 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-01-18  9:07:53 0 [Note] InnoDB: Uses event mutexes
+2023-01-18  9:07:53 0 [Note] InnoDB: Compressed tables use zlib 1.2.12
+2023-01-18  9:07:53 0 [Note] InnoDB: Number of pools: 1
+2023-01-18  9:07:53 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-01-18  9:07:53 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2023-01-18  9:07:53 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-01-18  9:07:53 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=313096
+2023-01-18  9:07:53 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-01-18  9:07:53 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-01-18  9:07:53 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-01-18  9:07:53 0 [Note] InnoDB: Setting file 'C:\works\htdocs\_\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-01-18  9:07:53 0 [Note] InnoDB: File 'C:\works\htdocs\_\mysql\data\ibtmp1' size is now 12 MB.
+2023-01-18  9:07:53 0 [Note] InnoDB: Waiting for purge to start
+2023-01-18  9:07:53 0 [Note] InnoDB: 10.4.27 started; log sequence number 313105; transaction id 206
+2023-01-18  9:07:53 0 [Note] InnoDB: Loading buffer pool(s) from C:\works\htdocs\_\mysql\data\ib_buffer_pool
+2023-01-18  9:07:53 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-01-18  9:07:53 0 [Note] InnoDB: Buffer pool(s) load completed at 230118  9:07:53
+2023-01-18  9:07:53 0 [Note] Server socket created on IP: '::'.
